@@ -91,9 +91,9 @@ h4 {
 
 .main-intro {
   width: 100%;
-  height: 30vh;
+  height: 60vh;
   box-sizing: border-box;
-  padding: 2% 15% 20% 15%;
+  padding: 25% 15% 20% 15%;
 }
 
 .hidden {
@@ -128,7 +128,7 @@ h4 {
 
 .main-section-one {
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   color: white;
 }
 
@@ -153,7 +153,7 @@ h4 {
 
 .main-section-two {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: inline-block;
 }
 
@@ -209,7 +209,7 @@ h4 {
 
 .main-section-three {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   color: white;
   text-align: center;
   box-sizing: border-box;
@@ -227,9 +227,8 @@ h4 {
 
 .main-section-four {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
-  padding-top: 5%;
 }
 
 .app-icon-container {
