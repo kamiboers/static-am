@@ -27,11 +27,16 @@ h3 {
   font-weight: 100;
 }
 
-
 h4 {
   font-size: 20px;
   font-weight: 200;
   margin-top: 30px;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 10px;
 }
 
 .navbar {
