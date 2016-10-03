@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
   $('.main-intro').children().addClass('fadeInUp');
+  $('body').fadeIn('slow')
 
   var waypoint = new Waypoint({
   element: document.getElementById('transition-one'),

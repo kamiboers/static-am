@@ -1,23 +1,29 @@
 body {
   font-family: 'Helvetica Neue';
-  font-weight: 200px;
   background-color:white;
-  -webkit-transition: background-color 1000ms ease-in-out;
-  -moz-transition: background-color 1000ms ease-in-out;
-  -o-transition: background-color 1000ms ease-in-out;
-  -ms-transition: background-color 1000ms ease-in-out;
-  transition: background-color 1000ms ease-in-out;
+  -webkit-transition: background-color 1200ms ease-in-out;
+  -moz-transition: background-color 1200ms ease-in-out;
+  -o-transition: background-color 1200ms ease-in-out;
+  -ms-transition: background-color 1200ms ease-in-out;
+  transition: background-color 1200ms ease-in-out;
+  display: hidden;
 }
 
 p {
   font-size: 16px;
   font-weight: 100;
-  line-height: 1.4;
+  line-height: 1.3;
   margin-top: 20px;
 }
 
 h2 {
   font-size: 26px;
+  font-weight: 200;
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: 40px;
   font-weight: 200;
   margin-top: 15px;
 }
@@ -61,13 +67,13 @@ h2 {
 
 .navbar-links > ul > li { 
   display: inline-block; 
+  padding: 6px 12px;
+  font-weight: 100;
 }
 
 .navbar-links > ul > li > a, a:visited, a:hover, a:target, a:focus {
   display: block;
-  padding: 6px 12px;
   text-decoration: none;
-  font-weight: 100;
   color: black;
 }
 
@@ -97,15 +103,15 @@ h2 {
 }
 
 .animate-delay-1 {
-  animation-delay: 1s;
+  animation-delay: .25s;
 }
 
 .animate-delay-2 {
-  animation-delay: 1.5s;
+  animation-delay: .75s;
 }
 
 .animate-delay-3 {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .main-intro > h1 {
@@ -117,28 +123,26 @@ h2 {
 .main-section-one {
   width: 100%;
   height: 45vh;
-  color: #eaeaea;
-  /*background-color: #1a1a1a;*/
+  color: white;
 }
 
 .ipad-image-one {
   position: absolute;
-  height: 38vh;
   width: 55%;
-  margin: 2% 0 0 10%;
-  background-color: #eaeaea;
-  opacity: .5;
+  margin: 2% 0 0 5%;
+  opacity: .9;
+  object-fit: scale-down;
+}
+
+.ipad-image-1 {
+  width: 100%;
 }
 
 .text-section-one {
   position: absolute;
   height: 50%;
-  margin: 20% 10% 0 50%;
+  margin: 25% 5% 0 45%;
   color: white;
-}
-
-.main-section-one > p {
-  margin-top: 0px;
 }
 
 .main-section-two {
@@ -149,26 +153,29 @@ h2 {
 
 .ipad-image-two {
   width: 80%;
-  float: left;
   height: 30vh;
-  margin: 5% 0 0 5%;
-
-  background-color: black;
-  opacity: .1;
+  margin: 5% auto;
+  opacity: .9;
 }
 
 .section-two-stats {
-  width: 90%;
-  float: left;
+  width: 100%;
   height: 25vh;
-  margin: 10px 0 10px 5%;
+  margin: 0 auto ;
 }
 
 .stats-content {
-  width: 45%;
+  box-sizing: border-box;
+  padding-left: 25px;
+  width: 50%;
   height: 40%;
   float: left;
-  text-align: center;
+  text-align: left;
+}
+
+.stats-content > h2 {
+  margin-left: 50px;
+  margin-bottom: 15px;
 }
 
 .stats-results {
@@ -176,24 +183,109 @@ h2 {
   border-left-style: 1px solid #eaeaea;
 }
 
+.stat-display {
+  display: inline-block;
+  max-width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+.stat-figure {
+  font-size: 36px;
+  display: block;
+  font-weight: 300;
+}
+
+.stat-caption {
+  font-size: 10px;
+  font-weight: 100;
+}
+
 .main-section-three {
   width: 100%;
   height: 50vh;
-  /*background-color: #2D75CC;*/
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5% 0;
+}
+
+.main-section-three > p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.laptop-image {
+  width: 70%;
 }
 
 .main-section-four {
   width: 100%;
   height: 50vh;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.app-icon-container {
+  width: 70%;
+  margin: 5% auto;
+  border-bottom: 1px solid #eaeaea;
+  display: inline-block;
+}
+
+.app-icon {
+  width: 20%;
+  float: left;
+}
+
+.app-icon-image {
+  width: 50px;
+}
+
+.app-icon-caption {
+  font-size: 10px;
+  margin: 5% auto;
+}
+
+.app-content {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+}
+
+.app-content-pane {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 3%;
+}
+
+.app-content-image {
+  width: 100%;
+}
+
+.app-content-text {
 }
 
 .main-section-five {
   width: 100%;
   height: 50vh;
-  background-color: #eaeaea;
+  background-color: gray;
+  background-image: url(../images/doctor.png);
+  background-size: cover;
+  opacity: .9;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20% 10%;
+}
+
+a, a:hover, a:focus, a:target, a:focus {
+  color: white;
 }
 
 .main-section-six {
+  text-align: center;
   background-color: #1a1a1a;
   width: 100%;
   height: 30vh;
@@ -203,22 +295,6 @@ h2 {
   height: 60px;
   width: 100%;
   background-color: white;
-}
-
-.stat-display {
-  display: inline-block;
-  width: auto;
-  float: left;
-}
-
-.stat-figure {
-  font-size: 36px;
-  font-weight: 300;
-  display: block;
-}
-
-.stat-caption {
-  
 }
 
 .condense-text {
